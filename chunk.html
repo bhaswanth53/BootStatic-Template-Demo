@@ -1,0 +1,19 @@
+<div>
+    <div class="uk-card uk-card-default bl-card">
+        <div class="uk-card-media-top bl-image">
+            <!-- <img src="./assets/media/projects/dusll.png" alt=""> -->
+            {{ post_image }}
+        </div>
+        <div class="uk-card-body bl-card-body">
+            <a href="{{ post_link }}" class="bl-title">
+                <h3 class="uk-card-title bl-title">{{ post_title }}</h3>
+            </a>
+            <p class="bl-label">Published: {{ post_date }}</p>
+            <p class="bl-text">{{ post_chunk_content }}...</p>
+            <!-- <p class="bl-label">by Bhaswanth Chiruthanuru</p> -->
+            <a href="{{ post_link }}" class="bl-more">
+                <button class="uk-button uk-button-small">Read More</button>
+            </a>
+        </div>
+    </div>
+</div>

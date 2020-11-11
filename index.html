@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="./assets/media/fav.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="./assets/media/fav.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <!-- <link rel="manifest" href="./manifest.json" /> -->
+  <link rel="alternate" href="http://bhaswanth.com/" hreflang="en-in" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>{{ blog_title }}</title>
+  <!-- <link rel="stylesheet" type="text/css" href="./assets/css/uikit.min.css" /> -->
+
+  <!-- Meta Tags -->
+  <meta name="title" content="{{ blog_title }}">
+  <meta name="description"
+    content="{{ blog_description }}">
+  <meta name="keywords"
+    content="{{ blog_keywords }}">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="Bhaswanth Chiruthanuru">
+  
+  {{ blog_head }}
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/uikit.min.css" />
+
+  <!-- Theme Customization -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/themes/solarize.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script type="text/javascript">
+    window._idl = {};
+    _idl.variant = "modal";
+    (function () {
+      var idl = document.createElement('script');
+      idl.async = true;
+      idl.src = 'https://members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl
+        .campaign || '') + '&variant=' + (_idl.variant || 'modal');
+      document.getElementsByTagName('body')[0].appendChild(idl);
+    })();
+  </script>
+</head>
+
+<body id="body">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- Loader -->
+  <div id="overlay" class="uk-inline">
+    <div class="uk-position-center">
+      <img src="./assets/media/1.png" alt="Logo" /><br />
+      <div class="uk-text-center">
+        <div class="lds-ellipsis uk-align-center">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of loader -->
+  <!-- Navbar -->
+  <div
+    uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+    <nav class="uk-navbar-container cus-nav" uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo olink" href="#banner-section" offset='100'>
+          <img src="./assets/media/1-small.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="uk-navbar-right uk-visible@m">
+        <ul class="uk-navbar-nav">
+          <li><a class="olink" href="http://bhaswanth.com"><span>01.</span> Home</a></li>
+          <li class="resume"><a href="https://sourcerer.io/bhaswanth53" target="_blank"
+              rel="noopener noreferrer"><span>Sourcerer</span></a></li>
+          <li class="resume"><a href="http://blog.bhaswanth.com/" target="_blank"
+              rel="noopener noreferrer"><span>Blog</span></a></li>
+        </ul>
+      </div>
+      <div class="uk-navbar-right uk-hidden@m">
+        <ul class="uk-navbar-nav">
+          <li class="navicon"><a href="#" uk-toggle="target: #sidemenu"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of navbar-->
+    <!-- Sidebar -->
+    <div id="sidemenu" uk-offcanvas="flip: true; overlay: true">
+      <div class="uk-offcanvas-bar">
+        <a class="uk-offcanvas-close uk-close" href="#">
+          <i class="fas fa-times"></i>
+        </a>
+        <div class="uk-text-center nav-div">
+          <ul class="uk-nav uk-nav-default">
+            <li><a class="olink" href="http://bhaswanth.com"><span>01.</span><br /> Home</a></li>
+            <li class="resume"><a href="https://sourcerer.io/bhaswanth53" target="_blank"
+                rel="noopener noreferrer"><span>Sourcerer</span></a></li>
+            <li class="resume"><a href="http://blog.bhaswanth.com/" target="_blank"
+                rel="noopener noreferrer"><span>Blog</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End of sidebar -->
+  </div>
+  <!-- Banner -->
+  <section class="banner" id="banner-section">
+    <div class="uk-grid-match" uk-grid>
+      <div class="uk-width-1-6@m uk-visible@m">
+        <div class="right-bar">
+          <ul class="uk-nav uk-nav-default uk-position-bottom uk-position-fixed ">
+            <li><a href="https://www.facebook.com/bhaswanth.kumar.9" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://linkedin.com/in/bhaswanthchittanoor" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/bhaswanth53" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-github"></i></a></li>
+            <li><a href="https://codepen.io/bhaswanth_chiruthanuru" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-codepen"></i></a></li>
+            <li><a href="https://www.instagram.com/i_the_crazy_geek/" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/bhaswanth4?lang=en" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-twitter"></i></a></li>
+            <li class="line-li"><a href="#" class="line"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="uk-width-3-4@m">
+        <div class="banner-div uk-margin-bottom">
+          <p class="hi">Hi, my name is</p>
+          <h1 class="h1-white">Bhaswanth Chiruthanuru</h1>
+          <p class="bl-head">Welcome to my Blog</p>
+          <!-- <p class="text">
+            I'm a passionate full-stack developer known for the quality apps produced for Companies and Entrepreneurs
+            around the globe to make their business ideas come true.
+          </p> -->
+          <br/>
+          <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            {{ post_listing }}
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-1-6@m uk-visible@m">
+        <div class="left-bar">
+          <ul class="uk-nav uk-nav-default  uk-position-bottom-right uk-position-fixed">
+            <li class="email"><a href="#">bhaswanth1997@gmail.com</a></li>
+            <li class="line-li"><a href="#" class="line"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of banner -->
+  <!--Footer-->
+  <footer>
+    <div class="uk-padding uk-text-center">
+        <ul class="uk-hidden@m">
+            <li><a href="https://www.facebook.com/bhaswanth.kumar.9" target="_blank"rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/bhaswanthchittanoor" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/bhaswanth53" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://codepen.io/bhaswanth_chiruthanuru" target="_blank" rel="noopener noreferrer"><i class="fab fa-codepen"></i></a></li>
+            <li><a href="https://www.instagram.com/i_the_crazy_geek/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/bhaswanth4?lang=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li class="line-li"><a href="#" class="line"></a></li>
+        </ul>
+        <p class="text">Designed & Built by Bhaswanth Chiruthanuru</p>
+    </div>
+  </footer>
+  <!--End of footer-->
+  <a href="#" class="bl-top uk-position-fixed uk-position-bottom-center" id="totop" uk-totop uk-scroll></a>
+  </div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+  <script src="./assets/js/uikit.min.js"></script>
+  <script src="./assets/js/uikit-icons.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  {{ blog_foot }}
+</body>
+
+</html>
